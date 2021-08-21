@@ -1,0 +1,20 @@
+.container {
+  .top-section {
+    text-align: right;
+  }
+
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .image {
+      width: 50%;
+      height: 40rem;
+      display: block;
+      margin: 1rem auto;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}

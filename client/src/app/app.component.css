@@ -1,0 +1,18 @@
+.container .top-section {
+  text-align: right;
+}
+.container .bottom-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container .bottom-section .image {
+  width: 50%;
+  height: 40rem;
+  display: block;
+  margin: 1rem auto;
+  background-size: cover;
+  background-position: center;
+}
+
+/*# sourceMappingURL=app.component.css.map */

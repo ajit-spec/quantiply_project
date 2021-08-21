@@ -1,0 +1,23 @@
+<div class="container" *ngIf="data">
+
+  <div class="top-section">
+    <input type="date" name="date" id="date" [(ngModel)]="sel_date" (change)="change_date($event)" [max]="curr_date">
+  </div>
+
+  <div class="bottom-section">
+    <h2>{{data.title}}</h2>
+    <div class="image" [ngStyle]="{
+    backgroundImage: 'url('+ data.url +')'
+    }" *ngIf="data.media_type ==='image'"></div>
+    <div *ngIf="data.media_type ==='video'">
+      <iframe width="640" height="360" frameborder="0"
+              webkitallowfullscreen mozallowfullscreen allowfullscreen
+              [src]="data.url | safe">
+      </iframe>
+    </div>
+    <p>{{data.explanation}}</p>
+  </div>
+
+</div>
+
+<ngx-spinner></ngx-spinner>
